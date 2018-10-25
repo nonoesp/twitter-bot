@@ -30,7 +30,7 @@ var queries = ['#arquitectura #design',
 			   '#writing #longform'];
 var idx = 0;
 
-rl.question("What to Favorite on Twitter? > ", function(answer) {
+//rl.question("What to Favorite on Twitter? > ", function(answer) {
 
 // We need to include our configuration file
 var T = new Twit(require('./config.js'));
@@ -103,5 +103,5 @@ var minutes = 5 * minutesToMilliseconds;
 var seconds = 30 * secondsToMilliseconds;
 setInterval(favoriteLatest, seconds);
 
-  rl.close();
-});
+  //rl.close();
+//});
